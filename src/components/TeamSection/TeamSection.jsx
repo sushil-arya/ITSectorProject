@@ -27,7 +27,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-1.jpg" className="img-fluid" alt="" />
+                  <img src="./assets/img/team-1.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -67,7 +67,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-2.jpg" className="img-fluid" alt="" />
+                  <img src="./assets/img/team-2.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -107,7 +107,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-3.jpg" className="img-fluid" alt="" />
+                  <img src="./assets/img/team-3.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -147,7 +147,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="../img/team-4.jpg" className="img-fluid" alt="" />
+                  <img src="./assets/img/team-4.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>

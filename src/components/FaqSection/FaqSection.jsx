@@ -193,7 +193,7 @@ const FaqSection = () => {
             </div>
             <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
               <div className="bg-primary rounded">
-                <img src="../img/about-2.png" className="img-fluid w-100" alt="" />
+                <img src="../assets/img/about-2.png" className="img-fluid w-100" alt="" />
               </div>
             </div>
           </div>

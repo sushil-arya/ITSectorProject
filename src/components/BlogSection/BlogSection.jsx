@@ -66,7 +66,7 @@ const BlogSection = () => {
             <div className="blog-item p-4">
               <div className="blog-img mb-4">
                 <img
-                  src="../img/service-1.jpg"
+                  src="../assets/img/service-1.webp"
                   className="img-fluid w-100 rounded"
                   alt=""
                 />
@@ -85,7 +85,7 @@ const BlogSection = () => {
               </p>
               <div className="d-flex align-items-center">
                 <img
-                  src="../img/testimonial-1.jpg"
+                  src="../assets/img/testimonial-1.jpg"
                   className="img-fluid rounded-circle"
                   style={{ width: 60, height: 60 }}
                   alt=""
@@ -99,7 +99,7 @@ const BlogSection = () => {
             <div className="blog-item p-4">
               <div className="blog-img mb-4">
                 <img
-                  src="../img/service-2.jpg"
+                  src="../assets/img/service-2-3.webp"
                   className="img-fluid w-100 rounded"
                   alt=""
                 />
@@ -118,7 +118,7 @@ const BlogSection = () => {
               </p>
               <div className="d-flex align-items-center">
                 <img
-                  src="../img/testimonial-2.jpg"
+                  src="../assets/img/testimonial-2.jpg"
                   className="img-fluid rounded-circle"
                   style={{ width: 60, height: 60 }}
                   alt=""
@@ -132,7 +132,7 @@ const BlogSection = () => {
             <div className="blog-item p-4">
               <div className="blog-img mb-4">
                 <img
-                  src="../img/service-3.jpg"
+                  src="../assets/img/service-3-1.jpg"
                   className="img-fluid w-100 rounded"
                   alt=""
                 />
@@ -151,7 +151,7 @@ const BlogSection = () => {
               </p>
               <div className="d-flex align-items-center">
                 <img
-                  src="../img/testimonial-3.jpg"
+                  src="../assets/img/testimonial-3.jpg"
                   className="img-fluid rounded-circle"
                   style={{ width: 60, height: 60 }}
                   alt=""
@@ -165,7 +165,7 @@ const BlogSection = () => {
             <div className="blog-item p-4">
               <div className="blog-img mb-4">
                 <img
-                  src="../img/service-4.jpg"
+                  src="../assets/img/service-4.jpg"
                   className="img-fluid w-100 rounded"
                   alt=""
                 />
@@ -184,7 +184,7 @@ const BlogSection = () => {
               </p>
               <div className="d-flex align-items-center">
                 <img
-                  src="../img/testimonial-1.jpg"
+                  src="../assets/img/testimonial-1.jpg"
                   className="img-fluid rounded-circle"
                   style={{ width: 60, height: 60 }}
                   alt=""
