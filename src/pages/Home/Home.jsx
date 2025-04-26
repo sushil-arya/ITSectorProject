@@ -2,7 +2,7 @@ import React from 'react'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel';
-import WOW from 'wowjs';
+// import WOW from 'wowjs';
 // import '/public/libs/wow/wow.min.js';
 // import '/public/libs/wow/animate.css';
 import $ from 'jquery';
@@ -28,9 +28,9 @@ const Home = () => {
 // };
 // spinner(0);
 
-  new WOW.WOW({
-        live: false
-    }).init();
+  // new WOW.WOW({
+  //       live: false
+  //   }).init();
 
 
 
