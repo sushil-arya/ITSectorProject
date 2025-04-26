@@ -66,7 +66,7 @@ const OfferSection = () => {
                   <div className="row g-4">
                     <div className="col-md-7">
                       <img
-                        src="img/offer-1.jpg"
+                        src="../img/offer-1.jpg"
                         className="img-fluid w-100 rounded"
                         alt=""
                       />
@@ -94,7 +94,7 @@ const OfferSection = () => {
                   <div className="row g-4">
                     <div className="col-md-7">
                       <img
-                        src="img/offer-2.jpg"
+                        src="../img/offer-2.jpg"
                         className="img-fluid w-100 rounded"
                         alt=""
                       />
@@ -122,7 +122,7 @@ const OfferSection = () => {
                   <div className="row g-4">
                     <div className="col-md-7">
                       <img
-                        src="img/offer-3.jpg"
+                        src="../img/offer-3.jpg"
                         className="img-fluid w-100 rounded"
                         alt=""
                       />
@@ -150,7 +150,7 @@ const OfferSection = () => {
                   <div className="row g-4">
                     <div className="col-md-7">
                       <img
-                        src="img/offer-4.jpg"
+                        src="../img/offer-4.jpg"
                         className="img-fluid w-100 rounded"
                         alt=""
                       />

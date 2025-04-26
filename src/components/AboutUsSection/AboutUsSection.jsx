@@ -70,7 +70,7 @@ const AboutUsSection = () => {
             <div className="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
               <div className="bg-primary rounded position-relative overflow-hidden">
                 <img
-                  src="img/about-2.png"
+                  src="../img/about-2.png"
                   className="img-fluid rounded w-100"
                   alt=""
                 />
@@ -95,7 +95,7 @@ const AboutUsSection = () => {
                   }}
                 >
                   <img
-                    src="img/about-4.png"
+                    src="../img/about-4.png"
                     className="img-fluid"
                     style={{ width: 100, height: 150, opacity: "0.9" }}
                     alt=""
@@ -103,7 +103,7 @@ const AboutUsSection = () => {
                 </div>
                 <div className="rounded-bottom">
                   <img
-                    src="img/about-5.jpg"
+                    src="../img/about-5.jpg"
                     className="img-fluid rounded-bottom w-100"
                     alt=""
                   />

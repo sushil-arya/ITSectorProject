@@ -16,7 +16,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-1.webp" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-1.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4"> Job Consulting</a>
@@ -29,7 +29,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-2.webp" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-2.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4">Payroll</a>
@@ -42,7 +42,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-3.webp" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-3.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4">IT Tranning</a>
@@ -55,7 +55,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-4.jpg" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-4.jpg" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4">Internship Program</a>
@@ -68,7 +68,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-5.jpg" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-5.jpg" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4">Hr Consulting</a>
@@ -81,7 +81,7 @@ const ServiceSection = () => {
               <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="img/service-6.jpg" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../img/service-6.jpg" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
                     <a href="#" className="h4 d-inline-block mb-4">Marketing Consulting</a>

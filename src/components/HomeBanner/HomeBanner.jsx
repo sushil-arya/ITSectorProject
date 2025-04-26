@@ -28,7 +28,7 @@ const HomeBanner = () => {
          {/* Carousel Start */}
           <OwlCarousel  className="header-carousel owl-carousel" {...options}>
             <div className="header-carousel-item">
-              <img src="img/carousel-1.webp" className="img-fluid w-100" alt="Image" />
+              <img src="../img/carousel-1.webp" className="img-fluid w-100" alt="Image" />
               <div className="carousel-caption">
                 <div className="container">
                   <div className="row gy-0 gx-5">
@@ -97,7 +97,7 @@ const HomeBanner = () => {
             </div>
             
             <div className="header-carousel-item">
-              <img src="img/carousel-3.webp" className="img-fluid w-100" alt="Image" />
+              <img src="../img/carousel-3.webp" className="img-fluid w-100" alt="Image" />
               <div className="carousel-caption">
                 <div className="container">
                   <div className="row g-5">
