@@ -1,13 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import TextMotion from '../Motion/TextMotion';
+
+import { motion, useInView } from 'framer-motion';
+
 
 const AboutUsSection = () => {
+
+  const ref = useRef(null);
+    
+  const isInView = useInView(ref, { once: true });
+  
+  const variantsLeft={
+    hidden: { opacity: 0, x: -60 },
+    visible: { opacity: 1, x: 0 },
+  }
+
+  const variantsRight={
+    hidden: { opacity: 0, x: 60 },
+    visible: { opacity: 1, x: 0 },
+  }
+  
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+
+
+
   return (
     <>
       {/* AboutUs Start */}
       <div className="container-fluid about pb-5">
         <div className="container py-5">
           <div className="row g-5 align-items-center">
-            <div className="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+            {/* <div className="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s" > */}
+            <motion.div className="col-xl-7" ref={ref}
+              initial="hidden"
+              animate={ isInView ? "visible" : "hidden"}
+              transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
+              variants={variantsLeft}>
               <div>
                 <h4 className="text-primary">About Us</h4>
                 <h1 className="display-5 mb-4">
@@ -66,8 +96,13 @@ const AboutUsSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+            </motion.div>
+            {/* <div className="col-xl-5 wow fadeInRight" data-wow-delay="0.2s"> */}
+            <motion.div className="col-xl-5" ref={ref}
+              initial="hidden"
+              animate={ isInView ? "visible" : "hidden"}
+              transition={{ duration: 0.6, delay: 0.4, ease: 'easeInOut' }}
+              variants={variantsRight}>
               <div className="bg-primary rounded position-relative overflow-hidden">
                 <img
                   src="../assets/img/about-2.png"
@@ -109,7 +144,7 @@ const AboutUsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 import Testimonial from '../../components/Testimonial/Testimonial'
 import { Link } from 'react-router-dom'
-import ServiceSection from '../../components/ServiceSection/ServiceSection'
+import ServiceSection from '../../components/ServiceSection/ServiceSection';
+import TextMotionTopBottom from '../../components/Motion/TextMotionTopBottom';
+import TextMotionBottomTop from '../../components/Motion/TextMotionBottomTop';
 
 const Service = () => {
   return (
@@ -43,12 +45,18 @@ const Service = () => {
           {/* Header Start */}
           <div className="container-fluid bg-breadcrumb">
             <div className="container text-center py-5" style={{maxWidth: '900px'}}>
-              <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
-              <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+              {/* <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4> */}
+              <TextMotionTopBottom>
+                <h4 className="text-white display-4 mb-4">Our Services</h4>
+              </TextMotionTopBottom>
+              {/* <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s"> */}
+              <TextMotionBottomTop>
+              <ol className="breadcrumb d-flex justify-content-center mb-0">
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 {/* <li className="breadcrumb-item"><a href="#">Pages</a></li> */}
                 <li className="breadcrumb-item active text-primary">Service</li>
-              </ol>    
+              </ol> 
+              </TextMotionBottomTop>  
             </div>
           </div>
           {/* Header End */}

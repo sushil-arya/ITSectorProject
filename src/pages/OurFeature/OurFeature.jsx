@@ -1,6 +1,8 @@
 import React from 'react'
 import FeatureSection from '../../components/FeatureSection/FeatureSection'
 import { Link } from 'react-router'
+import TextMotionTopBottom from '../../components/Motion/TextMotionTopBottom'
+import TextMotionBottomTop from '../../components/Motion/TextMotionBottomTop'
 
 const OurFeature = () => {
   return (
@@ -42,12 +44,18 @@ const OurFeature = () => {
         {/* Header Start */}
         <div className="container-fluid bg-breadcrumb">
           <div className="container text-center py-5" style={{maxWidth: '900px'}}>
-            <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Features</h4>
-            <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            {/* <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Features</h4> */}
+            <TextMotionTopBottom>
+            <h4 className="text-white display-4 mb-4">Our Features</h4>
+            </TextMotionTopBottom>
+            {/* <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s"> */}
+            <TextMotionBottomTop>
+            <ol className="breadcrumb d-flex justify-content-center mb-0">
               <li className="breadcrumb-item"><Link to="/">Home</Link></li>
               {/* <li className="breadcrumb-item"><a href="#">More Info</a></li> */}
               <li className="breadcrumb-item active text-primary">Feature</li>
-            </ol>    
+            </ol> 
+            </TextMotionBottomTop>   
           </div>
         </div>
         {/* Header End */}

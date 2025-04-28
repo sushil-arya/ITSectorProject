@@ -1,26 +1,62 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import TextMotion from '../Motion/TextMotion';
+
+import { motion, useInView } from 'framer-motion';
 
 const FaqSection = () => {
+
+    
+      const ref = useRef(null);
+    
+      const isInView = useInView(ref, { once: true });
+      
+      const variantsLeft={
+        hidden: { opacity: 0, x: -60 },
+        visible: { opacity: 1, x: 0 },
+      }
+  
+      const variantsRight={
+        hidden: { opacity: 0, x: 60 },
+        visible: { opacity: 1, x: 0 },
+      }
+      
+      useEffect(() => {
+        console.log(isInView);
+      }, [isInView]);
+
+
   return (
     <>
       <div className="container-fluid faq-section pb-5">
         <div className="container pb-5 overflow-hidden">
-          <div
+          {/* <div
             className="text-center mx-auto pb-5 wow fadeInUp"
             data-wow-delay="0.2s"
             style={{ maxWidth: 800 }}
-          >
-            <h4 className="text-primary">FAQs</h4>
-            <h1 className="display-5 mb-4">Frequently Asked Questions</h1>
-            <p className="mb-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-              adipisci facilis cupiditate recusandae aperiam temporibus corporis
-              itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-              obcaecati, ipsam mollitia hic.
-            </p>
-          </div>
+          > */}
+          <TextMotion>
+            <div
+              className="text-center mx-auto pb-5"
+              style={{ maxWidth: 800 }}
+            >
+              <h4 className="text-primary">FAQs</h4>
+              <h1 className="display-5 mb-4">Frequently Asked Questions</h1>
+              <p className="mb-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                adipisci facilis cupiditate recusandae aperiam temporibus corporis
+                itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
+                obcaecati, ipsam mollitia hic.
+              </p>
+            </div>
+          </TextMotion>
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+            {/* <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s"> */}
+            <motion.div className="col-lg-6" ref={ref}
+              initial="hidden"
+              animate={ isInView ? "visible" : "hidden"}
+              
+              transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
+              variants={variantsLeft}>
               <div
                 className="accordion accordion-flush bg-light rounded p-5"
                 id="accordionFlushSection"
@@ -190,12 +226,17 @@ const FaqSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+            </motion.div>
+            {/* <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.2s"> */}
+            <motion.div className="col-lg-6" ref={ref}
+              initial="hidden"
+              animate={ isInView ? "visible" : "hidden"}
+              transition={{ duration: 0.6, delay: 0.4, ease: 'easeInOut' }}
+              variants={variantsRight}>
               <div className="bg-primary rounded">
                 <img src="../assets/img/about-2.png" className="img-fluid w-100" alt="" />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

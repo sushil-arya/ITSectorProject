@@ -1,6 +1,9 @@
-import React from 'react'
-import TeamSection from '../../components/TeamSection/TeamSection'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import TeamSection from '../../components/TeamSection/TeamSection';
+import TextMotionTopBottom from '../../components/Motion/TextMotionTopBottom';
+import TextMotionBottomTop from '../../components/Motion/TextMotionBottomTop';
+
 
 const OurTeam = () => {
   return (
@@ -42,12 +45,18 @@ const OurTeam = () => {
         {/* Header Start */}
         <div className="container-fluid bg-breadcrumb">
           <div className="container text-center py-5" style={{maxWidth: '900px'}}>
-            <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Team</h4>
-            <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            {/* <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Team</h4> */}
+            <TextMotionTopBottom>
+              <h4 className="text-white display-4 mb-4">Our Team</h4>
+            </TextMotionTopBottom>
+            <TextMotionBottomTop>
+            {/* <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s"> */}
+            <ol className="breadcrumb d-flex justify-content-center mb-0" >
             <li className="breadcrumb-item"><Link to="/">Home</Link></li>
               {/* <li className="breadcrumb-item"><a href="#">Pages</a></li> */}
               <li className="breadcrumb-item active text-primary">Team</li>
-            </ol>    
+            </ol>
+            </TextMotionBottomTop>  
           </div>
         </div>
         {/* Header End */}
