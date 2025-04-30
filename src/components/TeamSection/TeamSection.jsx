@@ -3,6 +3,7 @@ import TextMotion from '../Motion/TextMotion';
 
 import { motion, useInView } from 'framer-motion';
 
+
 const TeamSection = () => {
 
   
@@ -32,8 +33,8 @@ const TeamSection = () => {
           > */}
           <TextMotion>
             <div
-              className="text-center mx-auto pb-5 wow fadeInUp"
-              data-wow-delay="0.2s"
+              className="text-center mx-auto pb-5"
+              
               style={{ maxWidth: 800 }}
             >
               <h4 className="text-primary">Our Team</h4>
@@ -59,7 +60,7 @@ const TeamSection = () => {
               variants={variants}>
               <div className="team-item">
                 <div className="team-img">
-                  <img src="./assets/img/team-1.jpg" className="img-fluid" alt="" />
+                  <img src="../assets/img/team-1.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -105,7 +106,7 @@ const TeamSection = () => {
               variants={variants}>
               <div className="team-item">
                 <div className="team-img">
-                  <img src="./assets/img/team-2.jpg" className="img-fluid" alt="" />
+                  <img src="../assets/img/team-2.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -152,7 +153,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="./assets/img/team-3.jpg" className="img-fluid" alt="" />
+                  <img src="../assets/img/team-3.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>
@@ -199,7 +200,7 @@ const TeamSection = () => {
             >
               <div className="team-item">
                 <div className="team-img">
-                  <img src="./assets/img/team-4.jpg" className="img-fluid" alt="" />
+                  <img src="../assets/img/team-4.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="team-title">
                   <h4 className="mb-0">David James</h4>

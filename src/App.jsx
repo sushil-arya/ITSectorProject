@@ -17,7 +17,10 @@ import OurTeam from './pages/OurTeam/OurTeam';
 import OurOffer from './pages/OurOffer/OurOffer';
 import Faqs from './pages/Faqs/Faqs';
 import TestimonialPage from './pages/TestimonialPage/TestimonialPage';
-
+import JobConsultancy from './pages/JobConsultancy/JobConsultancy';
+import ItTraining from './pages/ItTraining/ItTraining';
+import PayRoll from './pages/PayRoll/PayRoll';
+import Internship from './pages/Internship/Internship';
 
 function App() {
   
@@ -40,6 +43,10 @@ function App() {
             <Route path="/testimonial" exact={true}  element={<TestimonialPage />} />
             <Route path="/ouroffer" exact={true} element={<OurOffer />} />
             <Route path="/faqs" exact={true} element={<Faqs />} />
+            <Route path="/service/job-consultancy" exact={true} element={<JobConsultancy />} />
+            <Route path="/service/internship" exact={true} element={<Internship />} />
+            <Route path="/service/IT-traning" exact={true} element={<ItTraining />} />
+            <Route path="/service/pay-roll" exact={true} element={<PayRoll />} />
             {/*<Route path="/service" element={<Service />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/team" element={<Team />} />

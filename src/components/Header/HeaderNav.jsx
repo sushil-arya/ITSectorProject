@@ -37,10 +37,10 @@ const Header = () => {
                     <NavLink to="/service" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Services
                     </NavLink>
-                    <NavLink to="/blog" className="nav-item nav-link" exact={true} activeClassName="isActive">
+                    {/* <NavLink to="/blog" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Blogs
-                    </NavLink>
-                    <div className="nav-item dropdown">
+                    </NavLink> */}
+                    {/* <div className="nav-item dropdown">
                       <a to="#" className='nav-link' data-bs-toggle="dropdown" >
                         <span className="dropdown-toggle">More Info</span>
                       </a>
@@ -60,11 +60,11 @@ const Header = () => {
                         <NavLink to="/faqs"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
                           FAQs
                         </NavLink>
+                      </div>
+                    </div> */}
                         {/* <a href="404.html"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
                           404 Page
                         </a> */}
-                      </div>
-                    </div>
                     <NavLink to="/contact" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Contact Us
                     </NavLink>

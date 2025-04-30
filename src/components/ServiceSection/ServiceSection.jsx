@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import TextMotion from '../Motion/TextMotion';
+import { Link } from 'react-router';
 
 
 
 const ServiceSection = () => {
 
-  const ref = useRef(null);
+const ref = useRef(null);
 
 const isInView = useInView(ref, { once: true });
 
@@ -39,10 +40,8 @@ useEffect(() => {
                   </div>
             </TextMotion>
             <motion.div className="row g-4"  ref={ref}>
-              {/* <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s"> */}
-              {/* <div className="col-md-6 col-lg-4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"> */}
-              <motion.div className="col-md-6 col-lg-4" ref={ref}
+
+              <motion.div className="col-md-6 col-lg-6" ref={ref}
                 initial="hidden"
                 animate={ isInView ? "visible" : "hidden"}
                 
@@ -54,39 +53,33 @@ useEffect(() => {
                     <img src="../assets/img/service-1.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <a href="#" className="h4 d-inline-block mb-4"> Job Consulting</a>
+                    <Link to="/service/job-consultancy" className="h4 d-inline-block mb-4"> Job Consulting</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
-                    <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    <Link to="/service/job-consultancy" className="btn btn-primary rounded-pill py-2 px-4">Learn More</Link>
                   </div>
                 </div>
             
               </motion.div>
-              {/* <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s"> */}
-              {/* <div className="col-md-6 col-lg-4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"> */}
-              <motion.div className="col-md-6 col-lg-4" ref={ref}
+              <motion.div className="col-md-6 col-lg-6" ref={ref}
                 initial="hidden"
                 animate={ isInView ? "visible" : "hidden"}
                 
-                transition={{ duration: 0.6, delay: 0.4, ease: 'easeInOut' }}
+                transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
                 variants={variants}>
-              
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="../assets/img/service-2.webp" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../assets/img/service-4.jpg" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <a href="#" className="h4 d-inline-block mb-4">Payroll</a>
+                    <Link to="/service/internship" className="h4 d-inline-block mb-4">Internship Program</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
-                    <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    <Link className="btn btn-primary rounded-pill py-2 px-4" to="/service/internship">Learn More</Link>
                   </div>
-              
-              </div>
+                </div>
               </motion.div>
-              {/* <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s"> */}
-              <motion.div className="col-md-6 col-lg-4" ref={ref}
+              <motion.div className="col-md-6 col-lg-6" ref={ref}
                 initial="hidden"
                 animate={ isInView ? "visible" : "hidden"}
                 
@@ -98,36 +91,36 @@ useEffect(() => {
                     <img src="../assets/img/service-3.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <a href="#" className="h4 d-inline-block mb-4">IT Tranning</a>
+                    <Link to="/service/IT-traning" className="h4 d-inline-block mb-4">IT Tranning</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
-                    <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    <Link className="btn btn-primary rounded-pill py-2 px-4" to="/service/IT-traning">Learn More</Link>
                   </div>
                 </div>
               
               </motion.div>
-
-
-              
-              <motion.div className="col-md-6 col-lg-4" ref={ref}
+              <motion.div className="col-md-6 col-lg-6" ref={ref}
                 initial="hidden"
                 animate={ isInView ? "visible" : "hidden"}
                 
-                transition={{ duration: 0.4, delay: 0.4, ease: 'easeInOut' }}
+                transition={{ duration: 0.6, delay: 0.4, ease: 'easeInOut' }}
                 variants={variants}>
+              
                 <div className="service-item">
                   <div className="service-img">
-                    <img src="../assets/img/service-4.jpg" className="img-fluid rounded-top w-100" alt="Image" />
+                    <img src="../assets/img/service-2.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <a href="#" className="h4 d-inline-block mb-4">Internship Program</a>
+                    <Link to="/service/pay-roll" className="h4 d-inline-block mb-4">Payroll</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
-                    <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                    <Link className="btn btn-primary rounded-pill py-2 px-4" to="/service/pay-roll">Learn More</Link>
                   </div>
-                </div>
+              
+              </div>
               </motion.div>
-              <motion.div className="col-md-6 col-lg-4" ref={ref}
+
+              {/* <motion.div className="col-md-6 col-lg-4" ref={ref}
                 initial="hidden"
                 animate={ isInView ? "visible" : "hidden"}
                 
@@ -162,7 +155,7 @@ useEffect(() => {
                     <a className="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>
