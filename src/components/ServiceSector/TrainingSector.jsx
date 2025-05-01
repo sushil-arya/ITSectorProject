@@ -6,7 +6,7 @@ const TrainingSector = () => {
 
   const ref = useRef(null);
   
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   
   const variants={
     hidden: { opacity: 0, y: 100 },
@@ -41,7 +41,6 @@ const TrainingSector = () => {
                 obcaecati, ipsam mollitia hic.
               </p>
             </div>
-
           </TextMotion>
           <div className="row g-4">
             {/* <div
@@ -68,9 +67,9 @@ const TrainingSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             {/* <div
@@ -95,9 +94,9 @@ const TrainingSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             {/* <div
@@ -122,9 +121,9 @@ const TrainingSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             <motion.div className="col-md-6 col-lg-6 col-xl-6" ref={ref}
@@ -145,9 +144,9 @@ const TrainingSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             <motion.div className="col-md-6 col-lg-6 col-xl-6" ref={ref}
@@ -168,9 +167,9 @@ const TrainingSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             {/* <div

@@ -65,7 +65,7 @@ const FeatureSection = () => {
               className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
               data-wow-delay="0.2s"
             > */}
-            <div
+            <motion.div
               className="col-md-6 col-lg-6 col-xl-3" ref={ref}
               initial="hidden"
               animate={ isInView ? "visible" : "hidden"}
@@ -84,7 +84,7 @@ const FeatureSection = () => {
                   Learn More
                 </a>
               </div>
-            </div>
+            </motion.div>
             {/* <div
               className="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
               data-wow-delay="0.4s"

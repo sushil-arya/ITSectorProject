@@ -7,7 +7,7 @@ const JobConsultancySector = () => {
   
     const ref = useRef(null);
   
-    const isInView = useInView(ref, { once: false });
+    const isInView = useInView(ref, { once: true });
     
     const variants={
       hidden: { opacity: 0, y: 100 },
@@ -24,23 +24,7 @@ const JobConsultancySector = () => {
          {/* JobConsultancySector Start */}
         <div className="container-fluid feature py-5 pb-5">
           <div className="container py-5 pb-5">
-            {/* <div
-              className="text-center mx-auto pb-5 wow fadeInUp"
-              data-wow-delay="0.2s"
-              style={{ maxWidth: 800 }}
-            >
-              <h4 className="text-primary">Our Features</h4>
-              <h1 className="display-5 mb-4">
-                Connecting businesses, ideas, and people for greater impact.
-              </h1>
-              <p className="mb-0">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-                adipisci facilis cupiditate recusandae aperiam temporibus corporis
-                itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
-                obcaecati, ipsam mollitia hic.
-              </p>
-            </div> */}
-  
+          
             <TextMotion>
               <div
                 className="text-center mx-auto pb-5"
@@ -84,9 +68,9 @@ const JobConsultancySector = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                     laborum odit pariatur...
                   </p>
-                  {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                  <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                     Learn More
-                  </a> */}
+                  </a>
                 </div>
               </motion.div>
               {/* <div
@@ -111,9 +95,9 @@ const JobConsultancySector = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                     laborum odit pariatur...
                   </p>
-                  {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                  <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                     Learn More
-                  </a> */}
+                  </a>
                 </div>
               </motion.div>
               {/* <div
@@ -138,9 +122,9 @@ const JobConsultancySector = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                     laborum odit pariatur...
                   </p>
-                  {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                  <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                     Learn More
-                  </a> */}
+                  </a>
                 </div>
               </motion.div>
               {/* <div

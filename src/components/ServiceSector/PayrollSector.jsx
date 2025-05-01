@@ -6,7 +6,7 @@ import { motion, useInView } from 'framer-motion';
 const PayrollSector = () => {
   const ref = useRef(null);
   
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   
   const variants={
     hidden: { opacity: 0, y: 100 },
@@ -68,9 +68,9 @@ const PayrollSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             {/* <div
@@ -95,9 +95,9 @@ const PayrollSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
             {/* <div
@@ -122,9 +122,9 @@ const PayrollSector = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
                   laborum odit pariatur...
                 </p>
-                {/* <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </motion.div>
 
