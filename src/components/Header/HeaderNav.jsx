@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from "react-router";
 
 
 const Header = () => {
+
+
+  useEffect(() => {
+
+    
+    const navLinks = document.querySelectorAll('.nav-link, .dropdown-item');
+    const navbarCollapse = document.getElementById('navbarCollapse');
+
+    const collapseNavbar = (e) => {
+
+      const isDropdownToggle = e.target.closest('.dropdown-toggle');
+      if (isDropdownToggle) return; // Don't collapse if it's the dropdown toggle
+    
+      if (window.innerWidth < 992) {
+        const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, {
+          toggle: false,
+        });
+        bsCollapse.hide();
+      }
+    };
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', collapseNavbar);
+    });
+
+    return () => {
+      navLinks.forEach(link => {
+        link.removeEventListener('click', collapseNavbar);
+      });
+    };
+  }, []);
 
   return (
     <>
@@ -31,9 +62,40 @@ const Header = () => {
                     <NavLink to="/" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Home
                     </NavLink>
-                    <NavLink to="/service" className="nav-item nav-link" exact={true} activeClassName="isActive">
+                    {/* <NavLink to="/service" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Services
-                    </NavLink>
+                    </NavLink> */}
+
+                    <div className="nav-item dropdown">
+                      <NavLink to="/service" className='nav-link' data-bs-toggle="dropdown" >
+                        <span className="dropdown-toggle">Services</span>
+                      </NavLink>
+                      <div className="dropdown-menu m-0">
+                        {/* <NavLink to="/service/job-consultancy" className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          Job Consultancy
+                        </NavLink> */}
+                      
+                        <NavLink to="/service/job-consultancy" className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          Job Consultancy
+                        </NavLink>
+                          
+
+
+
+                        <NavLink to="/service/internship"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          Internship
+                        </NavLink>
+                        <NavLink to="/service/IT-traning"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          IT Training
+                        </NavLink>
+                        <NavLink to="/service/pay-roll"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          Pay Roll
+                        </NavLink>
+                        {/* <NavLink to="/faqs"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                          FAQs
+                        </NavLink> */}
+                      </div>
+                    </div>
                     <NavLink to="/about" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       About
                     </NavLink>
@@ -62,19 +124,19 @@ const Header = () => {
                         </NavLink>
                       </div>
                     </div> */}
-                        {/* <a href="404.html"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
-                          404 Page
-                        </a> */}
+                    {/* <a href="404.html"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
+                      404 Page
+                    </a> */}
                     <NavLink to="/contact" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Contact Us
                     </NavLink>
                   </div>
-                  <a
-                    href="#"
+                  <Link
+                    to="/enquirenow"
                     className="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0"
                   >
                     Enquire Now
-                  </a>
+                  </Link>
                 </div>
               </nav>
 

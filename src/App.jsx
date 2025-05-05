@@ -21,6 +21,7 @@ import JobConsultancy from './pages/JobConsultancy/JobConsultancy';
 import ItTraining from './pages/ItTraining/ItTraining';
 import PayRoll from './pages/PayRoll/PayRoll';
 import Internship from './pages/Internship/Internship';
+import EnquireNow from './pages/EnquireNow/EnquireNow';
 
 function App() {
   
@@ -47,6 +48,7 @@ function App() {
             <Route path="/service/internship" exact={true} element={<Internship />} />
             <Route path="/service/IT-traning" exact={true} element={<ItTraining />} />
             <Route path="/service/pay-roll" exact={true} element={<PayRoll />} />
+            <Route path="/enquirenow" exact={true} element={<EnquireNow />} />
             {/*<Route path="/service" element={<Service />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/team" element={<Team />} />
