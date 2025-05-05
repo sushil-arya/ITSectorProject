@@ -83,7 +83,7 @@ const Header = () => {
 
 
                         <NavLink to="/service/internship"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
-                          Internship
+                          Internships
                         </NavLink>
                         <NavLink to="/service/IT-traning"  className={`dropdown-item ${(navData)=>navData.isActive ? 'active' : ''}`} >
                           IT Training

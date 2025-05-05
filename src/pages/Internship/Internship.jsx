@@ -24,7 +24,7 @@ const Internship = () => {
             <div className="container text-center py-5" style={{maxWidth: '900px'}}>
               {/* <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4> */}
               <TextMotionTopBottom>
-                <h4 className="text-white display-4 mb-4">Internship</h4>
+                <h4 className="text-white display-4 mb-4">Internships</h4>
               </TextMotionTopBottom>
               {/* <ol className="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s"> */}
               <TextMotionBottomTop>
@@ -32,7 +32,7 @@ const Internship = () => {
                 <li className="breadcrumb-item"><Link to="/">Home</Link></li>
                 {/* <li className="breadcrumb-item"><a href="#">Pages</a></li> */}
                 <li className="breadcrumb-item"><Link to="/service">Service</Link></li>
-                <li className="breadcrumb-item active text-primary">Internship</li>
+                <li className="breadcrumb-item active text-primary">Internships</li>
               </ol>  
               </TextMotionBottomTop>  
             </div>

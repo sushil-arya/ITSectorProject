@@ -53,7 +53,7 @@ useEffect(() => {
                     <img src="../assets/img/service-1.webp" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <Link to="/service/job-consultancy" className="h4 d-inline-block mb-4"> Job Consulting</Link>
+                    <Link to="/service/job-consultancy" className="h4 d-inline-block mb-4">Job Consultancy</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
                     <Link to="/service/job-consultancy" className="btn btn-primary rounded-pill py-2 px-4">Learn More</Link>
@@ -72,7 +72,7 @@ useEffect(() => {
                     <img src="../assets/img/service-4.jpg" className="img-fluid rounded-top w-100" alt="Image" />
                   </div>
                   <div className="rounded-bottom p-4">
-                    <Link to="/service/internship" className="h4 d-inline-block mb-4">Internship Program</Link>
+                    <Link to="/service/internship" className="h4 d-inline-block mb-4">Internships</Link>
                     <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
                     </p>
                     <Link className="btn btn-primary rounded-pill py-2 px-4" to="/service/internship">Learn More</Link>
