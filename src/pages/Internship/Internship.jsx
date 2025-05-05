@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import TextMotionTopBottom from '../../components/Motion/TextMotionTopBottom';
 import TextMotionBottomTop from '../../components/Motion/TextMotionBottomTop';
 import InternshipSector from '../../components/ServiceSector/InternshipSector';
-import FeatureSection from '../../components/FeatureSection/FeatureSection';
-import TeamSection from '../../components/TeamSection/TeamSection';
+
 
 
 const Internship = () => {
@@ -40,15 +39,10 @@ const Internship = () => {
           {/* Header End */}
         </div>
         {/* Navbar & Hero End */}
-        {/* Abvout Start */}
+        {/* internship Start */}
         <InternshipSector />
-        {/* About End */}
-        {/* Features Start */}
-        <FeatureSection />
-        {/* Features End */}
-        {/* Team Start */}
-        <TeamSection />
-        {/* Team End */}
+        {/* internship End */}
+       
 
     </>
   )

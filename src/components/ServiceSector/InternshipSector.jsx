@@ -7,14 +7,10 @@ const InternshipSector = () => {
       
     const isInView = useInView(ref, { once: true });
     
-    const variantsLeft={
-      hidden: { opacity: 0, x: -75 },
-      visible: { opacity: 1, x: 0 },
-    }
-  
-    const variantsRight={
-      hidden: { opacity: 0, x: 75 },
-      visible: { opacity: 1, x: 0 },
+      
+    const variants={
+      hidden: { opacity: 0, y: 75 },
+      visible: { opacity: 1, y: 0 },
     }
     
     useEffect(() => {
@@ -25,11 +21,30 @@ const InternshipSector = () => {
   return (
     <>
             {/* Internship Start */}
-            <div className="container-fluid feature">
+            <div className="container-fluid feature py-5 pb-5">
               <div className="container py-5">
                 <div className="row g-5 align-items-center">
+
+                  <TextMotion>
+                    <div
+                      className="text-center mx-auto"
+                      style={{ maxWidth: 800 }}
+                    >
+                      <h4 className="text-primary">Internship</h4>
+                      <h1 className="display-5 mb-4">
+                        Connecting businesses, ideas, and people for greater impact.
+                      </h1>
+                      <p className="mb-0">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                        adipisci facilis cupiditate recusandae aperiam temporibus corporis
+                        itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
+                        obcaecati, ipsam mollitia hic.
+                      </p>
+                    </div>
+                    
+                  </TextMotion>
                 
-                  <motion.div className="col-xl-7" ref={ref}
+                  {/* <motion.div className="col-xl-7" ref={ref}
                     initial="hidden"
                     animate={ isInView ? "visible" : "hidden"}
                     transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
@@ -92,20 +107,19 @@ const InternshipSector = () => {
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </motion.div> */}
                   
                   <motion.div
-                   className="col-md-6 col-lg-6 col-xl-5" ref={ref}
+                  className="col-md-6 col-lg-6 col-xl-5 mx-auto" ref={ref}
                   initial="hidden"
                   animate={ isInView ? "visible" : "hidden"}
-                  transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
-                  variants={variantsRight}>
+                  transition={{ duration: 0.4, delay: 0.9, ease: 'easeInOut' }}
+                  variants={variants}>
                   <div className="feature-item p-4">
                     <div className="p-4 mb-4">
                       <img src="../assets/img/academic_internship.png" alt="" height="150px" />
                     </div>
-                    
-                    
+
                     <h4>Academic Internship</h4>
                     <p className="mb-4">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic

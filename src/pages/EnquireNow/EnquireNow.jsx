@@ -118,37 +118,37 @@ useEffect(() => {
                           <div className="col-lg-12 col-xl-6">
                             <div className="form-floating">
                               <input type="text" className="form-control border-0" id="name" placeholder="Your Name" />
-                              <label htmlFor="name">Your Name</label>
+                              <label htmlFor="name">Name</label>
                             </div>
                           </div>
                           <div className="col-lg-12 col-xl-6">
                             <div className="form-floating">
                               <input type="email" className="form-control border-0" id="email" placeholder="Your Email" />
-                              <label htmlFor="email">Your Email</label>
+                              <label htmlFor="email">E-mail Id</label>
                             </div>
                           </div>
-                          <div className="col-lg-12 col-xl-6">
+                          <div className="col-lg-12 col-xl-12">
                             <div className="form-floating">
                               <input type="phone" className="form-control border-0" id="phone" placeholder="Phone" />
-                              <label htmlFor="phone">Your Phone</label>
+                              <label htmlFor="phone">Contact Number</label>
                             </div>
                           </div>
-                          <div className="col-lg-12 col-xl-6">
+                          {/* <div className="col-lg-12 col-xl-6">
                             <div className="form-floating">
                               <input type="text" className="form-control border-0" id="project" placeholder="Project" />
                               <label htmlFor="project">Your Interest</label>
                             </div>
-                          </div>
+                          </div> */}
                           <div className="col-12">
                             <div className="form-floating">
                               <input type="text" className="form-control border-0" id="subject" placeholder="Subject" />
-                              <label htmlFor="subject">Subject</label>
+                              <label htmlFor="subject">Enquiry For</label>
                             </div>
                           </div>
                           <div className="col-12">
                             <div className="form-floating">
                               <textarea className="form-control border-0" placeholder="Leave a message here" id="message" style={{height: '160px'}} defaultValue={""} />
-                              <label htmlFor="message">Message</label>
+                              <label htmlFor="message">Elaborate you Enquiry</label>
                             </div>
                           </div>
                           <div className="col-12">
