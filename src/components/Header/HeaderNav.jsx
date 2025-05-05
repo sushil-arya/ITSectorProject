@@ -31,11 +31,11 @@ const Header = () => {
                     <NavLink to="/" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Home
                     </NavLink>
-                    <NavLink to="/about" className="nav-item nav-link" exact={true} activeClassName="isActive">
-                      About
-                    </NavLink>
                     <NavLink to="/service" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Services
+                    </NavLink>
+                    <NavLink to="/about" className="nav-item nav-link" exact={true} activeClassName="isActive">
+                      About
                     </NavLink>
                     {/* <NavLink to="/blog" className="nav-item nav-link" exact={true} activeClassName="isActive">
                       Blogs
