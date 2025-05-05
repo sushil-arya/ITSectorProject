@@ -25,7 +25,7 @@ const InternshipSector = () => {
   return (
     <>
             {/* Internship Start */}
-            <div className="container-fluid about pb-5">
+            <div className="container-fluid feature">
               <div className="container py-5">
                 <div className="row g-5 align-items-center">
                 
@@ -35,7 +35,7 @@ const InternshipSector = () => {
                     transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
                     variants={variantsLeft}>
                     <div>
-                      <h4 className="text-primary">Internship</h4>
+                      <h4 className="text-primary">Internship Program</h4>
                       <h1 className="display-5 mb-4">
                         Meet our company unless miss the opportunity
                       </h1>
@@ -94,53 +94,28 @@ const InternshipSector = () => {
                     </div>
                   </motion.div>
                   
-                  <motion.div className="col-xl-5" ref={ref}
-                    initial="hidden"
-                    animate={ isInView ? "visible" : "hidden"}
-                    transition={{ duration: 0.6, delay: 0.4, ease: 'easeInOut' }}
-                    variants={variantsRight}>
-                    <div className="bg-primary rounded position-relative overflow-hidden">
-                      <img
-                        src="../assets/img/about-2.png"
-                        className="img-fluid rounded w-100"
-                        alt=""
-                      />
-                      <div
-                        className=""
-                        style={{ position: "absolute", top: "-15px", right: "-15px" }}
-                      >
-                        <img
-                          src="../assets/img/about-3.png"
-                          className="img-fluid"
-                          style={{ width: 150, height: 150, opacity: "0.7" }}
-                          alt=""
-                        />
-                      </div>
-                      <div
-                        className=""
-                        style={{
-                          position: "absolute",
-                          top: "-20px",
-                          left: 10,
-                          transform: "rotate(90deg)"
-                        }}
-                      >
-                        <img
-                          src="../assets/img/about-4.png"
-                          className="img-fluid"
-                          style={{ width: 100, height: 150, opacity: "0.9" }}
-                          alt=""
-                        />
-                      </div>
-                      <div className="rounded-bottom">
-                        <img
-                          src="../assets/img/about-5.jpg"
-                          className="img-fluid rounded-bottom w-100"
-                          alt=""
-                        />
-                      </div>
+                  <motion.div
+                   className="col-md-6 col-lg-6 col-xl-5" ref={ref}
+                  initial="hidden"
+                  animate={ isInView ? "visible" : "hidden"}
+                  transition={{ duration: 0.4, delay: 0.2, ease: 'easeInOut' }}
+                  variants={variantsRight}>
+                  <div className="feature-item p-4">
+                    <div className="p-4 mb-4">
+                      <img src="../assets/img/academic_internship.png" alt="" height="150px" />
                     </div>
-                  </motion.div>
+                    
+                    
+                    <h4>Academic Internship</h4>
+                    <p className="mb-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
+                      laborum odit pariatur...
+                    </p>
+                    <a className="btn btn-primary rounded-pill py-2 px-4" href="#">
+                      Learn More
+                    </a>
+                  </div>
+                </motion.div>
                 </div>
               </div>
             </div>
