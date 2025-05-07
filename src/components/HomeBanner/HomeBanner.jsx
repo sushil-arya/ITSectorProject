@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import OwlCarousel from 'react-owl-carousel';
+import { Link } from 'react-router';
+import TextMotion from '../Motion/TextMotion';
+import TextMotionBottomTop from '../Motion/TextMotionBottomTop';
+import { motion, useInView } from 'framer-motion';
 
 const HomeBanner = () => {
+
+  const ref = useRef(null);
+  
+  const isInView = useInView(ref, { once: true });
+  
+  const variants={
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0 },
+  }
+  
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+  
+  
 
     
   const options = {
@@ -24,7 +43,7 @@ const HomeBanner = () => {
 
   return (
     <>
-     <div className="container-fluid position-relative p-0">
+     <div className="hero container-fluid position-relative p-0">
          {/* Carousel Start */}
           <OwlCarousel  className="header-carousel owl-carousel" {...options}>
             <div className="header-carousel-item">
@@ -94,6 +113,8 @@ const HomeBanner = () => {
                   </div>
                 </div>
               </div>
+
+      
             </div>
             
             <div className="header-carousel-item">
@@ -165,7 +186,70 @@ const HomeBanner = () => {
             </div>
           </OwlCarousel>
         {/* Carousel End */}
+
+        <TextMotion>
+        <div className="mt-5 icon-boxes position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay={200}>
+              <div className="container position-relative">
+                <div className="row gy-4 mt-5">
+                  {/* <div className="col-xl-3 col-md-6"> */}
+                  <motion.div
+                    className="col-xl-3 col-md-6" ref={ref}
+                    initial="hidden"
+                    animate={ isInView ? "visible" : "hidden"}
+                    transition={{ duration: 0.5, delay: 0.4, ease: 'easeInOut' }}
+                    variants={variants}>
+                    <div className="icon-box">
+                      {/* <div className="icon"><i className="bi bi-easel" /></div> */}
+                      <div className="icon">
+                        <i className="bi bi-people" />
+                      </div>
+                      <h4 className="title"><Link to="/service/job-consultancy" className="stretched-link">Job Consultancy</Link></h4>
+                    </div>
+                  </motion.div>{/*End Icon Box */}
+                  <motion.div className="col-xl-3 col-md-6" ref={ref}
+                    initial="hidden"
+                    animate={ isInView ? "visible" : "hidden"}
+                    transition={{ duration: 0.6, delay: 0.6, ease: 'easeInOut' }}
+                    variants={variants}>
+                      
+                    <div className="icon-box">
+                       {/* <div className="icon"><i className="bi bi-gem" /></div> */}
+                      <div className="icon"><i className="bi bi-briefcase" /></div>
+                      <h4 className="title"><Link to="/service/internship" className="stretched-link">Internships</Link></h4>
+                    </div>
+                  </motion.div>{/*End Icon Box */}
+                  <motion.div className="col-xl-3 col-md-6" ref={ref}
+                    initial="hidden"
+                    animate={ isInView ? "visible" : "hidden"}
+                    transition={{ duration: 0.8, delay: 0.8, ease: 'easeInOut' }}
+                    variants={variants}>
+                    <div className="icon-box">
+                      <div className="icon">
+                        <i class="bi bi-pc-display-horizontal" />
+                      </div>
+
+                      {/* <div className="icon"><i className="bi bi-geo-alt" /></div> */}
+                      <h4 className="title"><Link  to="/service/IT-traning" className="stretched-link">IT Training</Link></h4>
+                    </div>
+                    
+                  </motion.div>{/*End Icon Box */}
+                  <motion.div className="col-xl-3 col-md-6"ref={ref}
+                  initial="hidden"
+                  animate={ isInView ? "visible" : "hidden"}
+                  transition={{ duration: 0.9, delay: 0.9, ease: 'easeInOut' }}
+                  variants={variants}>
+                    <div className="icon-box">
+                      {/* <div className="icon"><i className="bi bi-command" /></div> */}
+                      <div className="icon"><i className="bi bi-cash-stack" /></div>
+                      <h4 className="title"><Link to="/service/pay-roll" className="stretched-link">Pay Roll</Link></h4>
+                    </div>
+                  </motion.div>{/*End Icon Box */}
+                </div>
+              </div>
+              
         </div>
+        </TextMotion>
+      </div>
     
     </>
   )

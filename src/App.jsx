@@ -22,6 +22,7 @@ import ItTraining from './pages/ItTraining/ItTraining';
 import PayRoll from './pages/PayRoll/PayRoll';
 import Internship from './pages/Internship/Internship';
 import EnquireNow from './pages/EnquireNow/EnquireNow';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   
